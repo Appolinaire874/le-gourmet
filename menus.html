@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto-Windpouiré - Nos Menus</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Barre d'information supérieure -->
+        <div class="header-top">
+            <div class="container">
+                <div class="header-info">
+                    <div class="header-info-item">
+                        <span class="icon">🕒</span>
+                        <span>Lun-Ven: <span class="highlight">12h-14h30</span> | <span class="highlight">19h-22h30</span></span>
+                    </div>
+                    <div class="header-info-item">
+                        <span class="icon">🕒</span>
+                        <span>Sam: <span class="highlight">12h-15h</span> | <span class="highlight">19h-23h</span></span>
+                    </div>
+                    <div class="header-info-item">
+                        <span class="icon">🕒</span>
+                        <span>Dim: <span class="highlight">12h-15h</span></span>
+                    </div>
+                </div>
+                <div class="header-info">
+                    <div class="header-info-item">
+                        <span class="icon">📞</span>
+                        <span>+226 72 85 15 41</span>
+                    </div>
+                    <div class="header-info-item">
+                        <span class="icon">📍</span>
+                        <span>Ouagadougou, Burkina Faso</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <h1>Resto-Windpouiré</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menus.html" class="active">Nos Menus</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Nos Menus</h2>
+            
+            <div class="menu-section">
+                <h3>Entrées</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h4>Salade de chèvre chaud</h4>
+                            <span class="prix">12€</span>
+                        </div>
+                        <p class="description">Salade verte, toasts de chèvre, miel</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h4>Terrine de campagne</h4>
+                            <span class="prix">10€</span>
+                        </div>
+                        <p class="description">Terrine maison, cornichons, pain de campagne</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h4>Saumon fumé</h4>
+                            <span class="prix">14€</span>
+                        </div>
+                        <p class="description">Saumon fumé, blinis, crème fraîche</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-section">
+                <h3>Plats</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h4>Entrecôte grillée</h4>
+                            <span class="prix">24€</span>
+                        </div>
+                        <p class="description">Entrecôte de bœuf, sauce béarnaise, frites maison</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h4>Filet de bar</h4>
+                            <span class="prix">22€</span>
+                        </div>
+                        <p class="description">Filet de bar, risotto aux légumes, sauce champagne</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h4>Magret de canard</h4>
+                            <span class="prix">23€</span>
+                        </div>
+                        <p class="description">Magret de canard, pommes sautées, sauce aux figues</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-section">
+                <h3>Desserts</h3>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h4>Crème brûlée</h4>
+                            <span class="prix">9€</span>
+                        </div>
+                        <p class="description">Crème brûlée à la vanille de Madagascar</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h4>Fondant au chocolat</h4>
+                            <span class="prix">10€</span>
+                        </div>
+                        <p class="description">Fondant au chocolat, glace vanille</p>
+                    </div>
+                    <div class="menu-item">
+                        <div class="menu-header">
+                            <h4>Tarte Tatin</h4>
+                            <span class="prix">9€</span>
+                        </div>
+                        <p class="description">Tarte Tatin maison, crème fraîche</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="menu-info">
+                <p>Menu du jour (entrée + plat + dessert) : 35€</p>
+                <p>Menu enfant (moins de 12 ans) : 15€</p>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Resto-Windpouiré- Tous droits réservés</p>
+        </div>
+    </footer>
+    <script>document.getElementById('year').textContent=new Date().getFullYear();</script>
+</body>
+</html>

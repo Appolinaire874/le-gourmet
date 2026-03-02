@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resto-Windpouiré - Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <!-- Barre d'information supérieure -->
+        <div class="header-top">
+            <div class="container">
+                <div class="header-info">
+                    <div class="header-info-item">
+                        <span class="icon">🕒</span>
+                        <span>Lun-Ven: <span class="highlight">12h-14h30</span> | <span class="highlight">19h-22h30</span></span>
+                    </div>
+                    <div class="header-info-item">
+                        <span class="icon">🕒</span>
+                        <span>Sam: <span class="highlight">12h-15h</span> | <span class="highlight">19h-23h</span></span>
+                    </div>
+                    <div class="header-info-item">
+                        <span class="icon">🕒</span>
+                        <span>Dim: <span class="highlight">12h-15h</span></span>
+                    </div>
+                </div>
+                <div class="header-info">
+                    <div class="header-info-item">
+                        <span class="icon">📞</span>
+                        <span>+226 72 85 15 41</span>
+                    </div>
+                    <div class="header-info-item">
+                        <span class="icon">📍</span>
+                        <span>Ouagadougou, Burkina Faso</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="header-main">
+            <div class="container">
+                <h1>Resto-Windpouiré</h1>
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Accueil</a></li>
+                        <li><a href="menus.html">Nos Menus</a></li>
+                        <li><a href="contact.html" class="active">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+           
+            <div class="contact-form">
+                <h3>Envoyez-nous un message</h3>
+                <form id="contactForm" method="POST" action="#">
+                    <div class="form-group">
+                        <label for="nom">Nom :</label>
+                        <input type="text" id="nom" name="nom" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email :</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message :</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Envoyer</button>
+                </form>
+            </div>
+
+             <h2>Contactez-nous</h2>
+            
+            <div class="contact-info">
+                <div class="info">
+                    <h3>Adresse</h3>
+                    <p>123 Rue de la Gastronomie<br>
+                    75001 Paris</p>
+                    
+                    <h3>Téléphone</h3>
+                    <p>01 23 45 67 89</p>
+                    
+                    <h3>Email</h3>
+                    <p>contact@legourmet.fr</p>
+                </div>
+                
+                <div class="map">
+                    <h2 style="text-align: center;"> Se rendre sur notre site via la localisation</h2>
+                    <iframe src="https://www.google.com/maps/embed?..." width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+            
+            <div class="success" id="successMessage" style="display:none;color:green;margin:1em 0;">
+
+            </div>
+            
+        </div>
+    </main>
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="year"></span> Resto-Windpouiré - Tous droits réservés</p>
+        </div>
+    </footer>
+    <script>
+        document.getElementById('year').textContent=new Date().getFullYear();
+        document.getElementById('contactForm').addEventListener('submit', function(e){
+            e.preventDefault();
+            document.getElementById('successMessage').textContent = 'Merci pour votre message, nous vous répondrons dans les plus brefs délais.';
+            document.getElementById('successMessage').style.display = 'block';
+            this.reset();
+        });
+    </script>
+</body>
+</html>
